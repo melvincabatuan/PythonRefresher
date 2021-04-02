@@ -1548,7 +1548,8 @@ import sys
 import random
 
 num = random.randint(1,100)
-guess = sys.maxsize
+# guess = sys.maxsize
+guess = -1
 
 while num != guess:
   guess = int(input("Input your guess (1 <= k <= 100): "))
