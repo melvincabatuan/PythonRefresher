@@ -39,8 +39,49 @@ r'''
 
         • To practice conditionals and iteration as applied to
           creating basic patterns.
+          
+        • To declare simple functions without parameters. (code reuse)
 
 
+
+
+
+     __                      _    _                      __  __
+    / _| _   _  _ __    ___ | |_ (_)  ___   _ __   ___  / /  \ \
+   | |_ | | | || '_ \  / __|| __|| | / _ \ | '_ \ / __|| |    | |
+   |  _|| |_| || | | || (__ | |_ | || (_) || | | |\__ \| |    | |
+   |_|   \__,_||_| |_| \___| \__||_| \___/ |_| |_||___/| |    | |
+                                                        \_\  /_/
+      a block of code which only runs when it is called
+
+
+
+
+
+          _         __  _         _  _    _
+       __| |  ___  / _|(_) _ __  (_)| |_ (_)  ___   _ __
+      / _` | / _ \| |_ | || '_ \ | || __|| | / _ \ | '_ \
+     | (_| ||  __/|  _|| || | | || || |_ | || (_) || | | |
+      \__,_| \___||_|  |_||_| |_||_| \__||_| \___/ |_| |_|
+
+                      def function_name():
+                        block_of_code
+
+                                  _  _
+                       ___  __ _ | || |
+                      / __|/ _` || || |
+                     | (__| (_| || || |
+                      \___|\__,_||_||_|
+
+                        function_name()
+
+========================================================================
+Drill 1-0 Write a function that prints "Hello, World".
+========================================================================
+'''
+
+
+r'''
 ========================================================================
 Drill 1-1 Write a Python program that prints the following box pattern:
 (Use random and string module to generate random uppercase characters)
