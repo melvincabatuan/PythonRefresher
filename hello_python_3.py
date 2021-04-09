@@ -259,20 +259,7 @@ Drill 1-1 a) Write a Karel helper function to make Karel turn right.
 
 # YOUR CODE HERE
 
-from stanfordkarel import *
 
-def turn_around():
-  turn_left()
-  turn_left()
-
-def turn_right():
-  turn_left()
-  turn_left()
-  turn_left()
-
-def go_to_wall():
-  while front_is_clear():
-    move()
 
 
 
@@ -509,57 +496,7 @@ Drill 1-9 Write a Karel helper function to create a random color pattern
 
 # YOUR CODE HERE
 
-def go_back(steps):
-  turn_around()
-  for _ in range(steps):
-    move()
 
-def move_to_position():
-  turn_right()
-  move()
-  turn_right()
-
-import random
-def get_color():
-  colors = ["Red","Black","Cyan","Dark Gray", \
-      "Gray", "Green", "Light Gray", "Magenta", \
-      "Orange", "Pink",  "Blue","Yellow",
-  ] # "White"
-  return random.choice(colors)
-
-
-def color_corners(number):
-  for _ in range(number):
-    paint_corner(get_color())
-    move()
-  paint_corner(get_color())
-
-def pyramid():
-  # Base count
-  base = 0
-  while front_is_clear():
-    paint_corner(get_color())
-    move()
-    base += 1
-  paint_corner(get_color())
-
-  # Go back
-  go_back(base-1)
-
-  base -= 2
-
-  # Install in next layers
-  while right_is_clear() and base > -1:
-    move_to_position()
-    color_corners(base)
-    go_back(base-1)
-    base -= 2
-
-def main():
-  pyramid()
-
-if __name__=="__main__":
-  run_karel_program()
 
 
 
