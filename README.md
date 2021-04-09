@@ -1,5 +1,7 @@
 # Python Refresher Series
 
+## Playlist: https://www.youtube.com/playlist?list=PL7__rWe0pMVecXeafEy6jvPeHNIgg7cnd 
+
               ___________________________________________________
             /                                                    \`
            |    _____________________________________________     |
